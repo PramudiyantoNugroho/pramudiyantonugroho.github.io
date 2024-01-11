@@ -91,12 +91,12 @@ a {
 }
 
 .pre-title {
+  text-align: left;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   color: var(--secondaryTextColor);
   position: relative;
   padding-left: 40px;
-  width: fit-content;
   font-weight: 400;
   font-size: 0.9rem;
 }
@@ -252,69 +252,38 @@ nav ul li a {
   fill: var(--primaryIconColor);
 }
 
-/* Portfolios */
-#portfolios {
-  padding: var(--sectionPadding);
+#aboutme {
+  background-color: #f8f8f8;
+  padding: 40px 0;
 }
 
-.portfolio {
-  border-radius: var(--itemBorderRadius);
-  overflow: hidden; /* supaya gambar yang diatas itu dia ngikut border radiusnya, karena yang dikasih border radius disini adalah div portfolio ini */
-  border: 1px solid var(--borderColor);
+.aboutme {
+  text-align: center;
 }
 
-.portfolio-cover {
-  height: 250px;
+.section-title {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
 
-.portfolio img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.aboutme-info {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.portfolio-info {
-  padding: 2rem 1.5rem;
+.aboutme-info p {
+  font-size: 1.2em;
+  color: #555;
+  line-height: 1.6;
 }
 
-.portfolio-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-}
-
-.portfolio h4 {
-  font-weight: 500;
-  font-size: 1.05rem;
-}
-
-.portfolio-title a svg:hover {
-  fill: var(--primaryIconColor);
-}
-
-.portfolio-title a svg {
-  transition: 0.2s ease-in-out;
-}
-
-.portfolio-tags {
-  display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
-.portfolio-tags div {
-  font-size: 0.9rem;
-  border: 1px solid var(--borderColor);
-  padding: 0.4rem 1rem;
-  color: var(--secondaryTextColor);
-}
-
-.portfolio-tags div {
-  font-size: 0.9rem;
-  border: 1px solid var(--borderColor);
-  padding: 0.4rem 1rem;
-  color: var(--secondaryTextColor);
+/* Grid Style */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
 }
 
 /* Skills and Education */
